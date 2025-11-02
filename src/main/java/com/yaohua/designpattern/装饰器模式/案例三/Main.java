@@ -4,7 +4,6 @@ import com.yaohua.designpattern.装饰器模式.案例二.BufferFileInputStream;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.InputStream;
 import java.time.Instant;
 
 /**
