@@ -45,11 +45,11 @@
 
 
 <!--        门面模式学习，案例二，这个包只提供了接口，所有的插件要符合这个接口的规范；-->
-        <dependency>
-            <groupId>com.yaohua</groupId>
-            <artifactId>my_plugin_api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.yaohua</groupId>-->
+<!--            <artifactId>my_plugin_api</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--        </dependency>-->
 
 
 

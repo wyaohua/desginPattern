@@ -1,6 +1,6 @@
 package com.yaohua.designpattern.门面模式.案例二;
 
-import com.yaohua.plugin.Myplugin;
+//import com.yaohua.plugin.Myplugin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,14 +25,14 @@ public class TimeController {
 
     private final DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
-    private Myplugin myplugin;
+//    private Myplugin myplugin;
 
 
     @GetMapping("getTime")
     public String getTime(){
-        if (myplugin != null){
-            myplugin.beforeGetTime();
-        }
+//        if (myplugin != null){
+//            myplugin.beforeGetTime();
+//        }
         return LocalDateTime.now().format(dateTimeFormatter);
     }
 
@@ -52,7 +52,7 @@ public class TimeController {
             String classFullName = new String(resourceAsStream.readAllBytes());
             Class<?> aClass = urlClassLoader.loadClass(classFullName.trim());//加载什么？传入类的全类名
             Constructor<?> constructor = aClass.getConstructor(); //获取无参构造函数
-            myplugin= (Myplugin)constructor.newInstance();
+//            myplugin= (Myplugin)constructor.newInstance();
 
             return "加载成功";
         }catch (Exception e){
