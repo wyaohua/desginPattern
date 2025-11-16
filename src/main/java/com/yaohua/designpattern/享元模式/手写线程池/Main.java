@@ -1,8 +1,7 @@
-package com.yaohua.designpattern.享元模式;
+package com.yaohua.designpattern.享元模式.手写线程池;
 
 
 
-import com.yaohua.designpattern.享元模式.手写线程池.MyThreadPool版本四;
 import com.yaohua.designpattern.享元模式.手写线程池.拒绝策略.ThrowExceptionHandle;
 
 import java.util.concurrent.ArrayBlockingQueue;
