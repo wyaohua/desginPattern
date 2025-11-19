@@ -12,6 +12,6 @@ public class Main {
         System.out.println(Sql.select("name", "age").from("user").where(" id = 1").build());
 
 
-        System.out.println(Sql.update().table("user").set("name", "张三").set("age", "12").where(" id = 1").build());
+        System.out.println(Sql.update().table("user").where(" id = 1").set("age", "12").build());
     }
 }
